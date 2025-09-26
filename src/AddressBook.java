@@ -14,10 +14,13 @@ public class AddressBook {
         buddies.remove(buddy);
     }
 
+    public void getBuddy() { buddies.get(0); }
+
     public static void main(String[] args) {
         BuddyInfo buddy = new BuddyInfo("SpongeBob", "Bikini Bottom", "67");
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(buddy);
+        addressBook.getBuddy();
     }
 }
